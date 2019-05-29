@@ -6,8 +6,7 @@ public class Score : MonoBehaviour
 {
     // Start is called before the first frame update
     public Text score;
-    public Transform player;
-    private 
+    //public Transform player;
     void Start()
     {
         
@@ -16,6 +15,7 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       /* int sc =(int)Time.time;
+       score.text = sc.ToString();*/
     }
 }
