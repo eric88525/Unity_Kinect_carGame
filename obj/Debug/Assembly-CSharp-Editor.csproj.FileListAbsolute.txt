@@ -1,0 +1,2 @@
+D:\UNITYWORK\jump_game\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+D:\UNITYWORK\jump_game\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache

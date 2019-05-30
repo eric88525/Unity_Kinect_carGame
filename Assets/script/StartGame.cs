@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class StartGame : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Transform mouseLocation;
     void Start()
     {
         
@@ -14,6 +14,7 @@ public class StartGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (Input.GetMouseButtonDown(0)){
             SceneManager.LoadScene("LV1");
            

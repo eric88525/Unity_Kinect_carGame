@@ -8,8 +8,8 @@ public class box_spawner : MonoBehaviour
     public GameObject[] blocks;
 
     private int spawnNums = 1; //生成數量
-    private float timespawn = 2f; // 生成時間點
-    private float timewaves = 2f; // 間隔
+    private float timespawn = 3f; // 生成時間點
+    private float timewaves = 3f; // 間隔
     private Quaternion rotation = Quaternion.Euler (0, -180, 0);
     void Start()
     {

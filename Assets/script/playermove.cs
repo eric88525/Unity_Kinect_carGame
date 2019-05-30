@@ -30,21 +30,20 @@ public class playermove : MonoBehaviour
        if(move.position.y < -1f){
             FindObjectOfType <Game_Manager>().EndGame();
        }
-       if(Input.GetKey("w")){
+        
+       
+        if (Input.GetKey("w") ){
            powermode.SetActive(true);
            PlayerPrefs.SetInt("powerMode",1); // 開啟噴射
            move.isKinematic = true;
            powermodeEndtime = Time.time + 3.0;
            MusicSorce.Play();
           
-      }else{
-          if( Time.time > powermodeEndtime){
+        }else if (Time.time > powermodeEndtime)
+        {
             powermode.SetActive(false);
             move.isKinematic = false;
-            PlayerPrefs.SetInt("powerMode",0); // 關閉噴射
-            
-          }
-           
-       }
+            PlayerPrefs.SetInt("powerMode", 0); // 關閉噴射
+        }
     }
 }
